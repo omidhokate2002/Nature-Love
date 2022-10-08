@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav{
+    width: 100%;
+    position: absolute;
+    top: -24px;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo{
+    width: 60px;
+    margin-left: -50px;
+    margin-top: 10px;
+    transition: 1s;
+}
+nav .logo:hover{
+    width: 100px;
+        -webkit-transform: rotate(5deg) ; 
+        /* -moz-transform: rotate(20deg) skewY(20deg); /Firefox/ */
+        /* -ms-transform: rotate(20deg) skewY(20deg); / Internet Explorer / */
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+    
+}
+.hero nav ul li a:hover{
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+    transition: .5s;
+    text-decoration: solid;
+    padding: 5px;
+    /* border-bottom: 2.5px solid rgb(255, 255, 255); */
+    border-radius: 10px;
+    /* border-left: 5px solid rgb(0, 0, 0); */
+    border: 0.5px solid rgb(0, 0, 0);
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgba(230, 211, 211, 0.87);
+    font-size: 17px;
+    font-weight: bold;
+    transition: .4s;
+}
+.button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    
+}
+
+.content{
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 160px;
+    font-weight: 600;
+    color: #fff;
+    transition: 0.5s;
+}
+.content h1:hover{
+    -webkit-text-stroke: 2px white;
+    color: transparent;
+}
+
+.content a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    border: 2px solid#fff;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+.back-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+    
+@media (min-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .back-video{
+        width: auto;
+        height: 100% ;
+    }
+}
+
